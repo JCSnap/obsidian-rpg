@@ -135,12 +135,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/Character/RLRPG Heath.md",
+                "file": "RLRPG/Character/RLRPG Health.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Heath"
+              "title": "RLRPG Health"
             }
           },
           {
@@ -219,12 +219,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/RLRPG Database.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Database"
+              "title": "README"
             }
           }
         ],
@@ -260,7 +260,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#rlrpg-health",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -376,23 +376,23 @@
   },
   "active": "1ec3c80929d36909",
   "lastOpenFiles": [
-    "RLRPG/RLRPG Transactions.md",
     "RLRPG/RLRPG Database.md",
+    "RLRPG/Character/RLRPG Finance.md",
+    "RLRPG/Character/RLRPG Health.md",
+    "README.md",
+    "RLRPG/RLRPG Skill Tree.md",
+    "RLRPG/RLRPG Main.md",
+    "RLRPG/RLRPG Transactions.md",
     "RLRPG/Character/RLRPG Life.md",
     "RLRPG/Character/RLRPG Academics.md",
     "RLRPG/Character/RLRPG Career.md",
-    "RLRPG/Character/RLRPG Finance.md",
-    "RLRPG/Character/RLRPG Heath.md",
     "RLRPG/Character",
-    "RLRPG/RLRPG Main.md",
-    "RLRPG/RLRPG Skill Tree.md",
     "Recipes",
     "Skills/Current Affairs.md",
     "Essays/Should AI Art be Given Copyright?.md",
     "Skills/Software Engineering.md",
     "Skills/Cooking.md",
     "Skills/Computer Science.md",
-    "README.md",
     "Essays",
     "Skills",
     "RLRPG",
