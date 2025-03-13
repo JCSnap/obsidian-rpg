@@ -12,7 +12,7 @@ vault_path = sys.argv[3]
 
 database_file = vault_path + "/RLRPG/RLRPG Database.md"
 with open(database_file, "r") as db:
-    config = {line.split(": ")[0]: line.split(": ")[1].strip() for line in db}
+    config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
 
 main_file = vault_path + "/RLRPG/" + config["main_file_name"]
 transaction_file = vault_path + "/RLRPG/" + config["transaction_file_name"]
@@ -22,7 +22,10 @@ def get_gold():
     """Extracts the current gold count from the main file."""
     with open(main_file, "r") as f:
         content = f.read()
-    match = re.search(rf"{re.escape(gold_prefix)}(-?\d+)", content)
+    print("prefix", gold_prefix)
+    match = re.search(rf"{re.escape(gold_prefix)}\s*`(-?\d+)`", content)
+    if match:
+        print(f"Gold Found: {match.group(1)}")
     return int(match.group(1)) if match else 0
 
 def update_gold():
@@ -34,8 +37,8 @@ def update_gold():
         content = f.read()
 
     updated_content = re.sub(
-        rf"({re.escape(gold_prefix)})-?\d+", 
-        rf"\1{new_gold}", 
+        rf"({re.escape(gold_prefix)}\s*)`-?\d+`", 
+        rf"\1`{new_gold}`", 
         content
     )
 

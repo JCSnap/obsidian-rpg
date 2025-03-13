@@ -1,8 +1,8 @@
 ## Items
-Gold: `0`
+Gold: `10`
 
 ## Active Quests
-- [ ] Finish assignment 1 for CS0000  `20`
+- [x] Finish assignment 2 for CS0000 `20`
 - [ ] Submit application for XXX Program `10`
 
 ## Passive Quests (pinned)
@@ -18,21 +18,10 @@ Gold: `0`
 [[RLRPG Health]]
 [[RLRPG Life]]
 
-```run-python
-vault_path = @vault_path
-database_file_title = 'RLRPG Database.md'
-database_path = vault_path + "/RLRPG/" + database_file_title
-
-with open(database_path, "r") as db:
-	  config = {line.split(": ")[0]: line.split(": ")[1].strip() for line in db}
-	  print(config)
-	  print(vault_path)
-```
+### Run this code when you are done for the day
 
 ```run-python
 import subprocess
 vault_path = @vault_path
-pa = vault_path + "/RLRPG/scripts/hello.py"
-
-subprocess.run(["python3", pa, vault_path])
+subprocess.run(["python3", vault_path + "/process_tasks.py", vault_path])
 ```

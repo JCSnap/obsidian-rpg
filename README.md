@@ -19,6 +19,6 @@ Except you do not have to manually create the scripts since it will be provided 
 ## Main File structure
 - `RLRPG Main`: The "home screen" for your game. For QOL improvement, you can download the [homepage plugin](https://github.com/mirnovov/obsidian-homepage) and set your home page to this file
 - `RLRPG Transactions` This will serve as a book-keeping for all your coins inflow and outflow (think a Bitcoin ledger)
-- `RLRPG Database`: The source of truth for all variables
+- `RLRPG Database`: The source of truth for all variables (actually more like pointers to source of truth)?
 - `RLRPG Skill Tree`: Contain links to resources for the important skills you want to develop. Contain quests for you to earn gold
 - The character files like `RLRPG Academics` and `RLRPG Health` etc. will contain important links, information and quests related to that aspect
