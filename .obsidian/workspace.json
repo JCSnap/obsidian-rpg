@@ -205,12 +205,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/RLRPG Scripts.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Scripts"
+              "title": "README"
             }
           }
         ],
@@ -363,14 +363,14 @@
   },
   "active": "46c59d292a867119",
   "lastOpenFiles": [
-    "RLRPG/RLRPG Transactions.md",
+    "RLRPG/RLRPG Scripts.md",
+    "README.md",
     "RLRPG/RLRPG Main.md",
+    "RLRPG/RLRPG Transactions.md",
     "add_coins.py",
     "add_gold.py",
-    "RLRPG/RLRPG Scripts.md",
     "RLRPG/RLRPG Database.md",
     "process_tasks.py",
-    "README.md",
     "RLRPG/scripts/hello.py",
     "RLRPG/scripts",
     "RLRPG/RLRPG Skill Tree.md",
