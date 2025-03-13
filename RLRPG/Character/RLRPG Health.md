@@ -6,3 +6,4 @@
 - Go to the gym `10`
 - Play one session of football/ultimate frisbee `10`
 - Walk > 5k steps `5`
+- Drink 3 bottles of water `5`
