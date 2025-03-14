@@ -2,7 +2,7 @@
   "version": 4,
   "homepages": {
     "Main Homepage": {
-      "value": "RLRPG Main",
+      "value": "RLRPG/RLRPG Main",
       "kind": "File",
       "openOnStartup": true,
       "openMode": "Replace all open notes",

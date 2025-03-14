@@ -1,8 +1,7 @@
 ## Items
-Gold: `15`
+Gold: `37`
 
 ## Active Quests
-- [x] Finish assignment 2 for CS0000 `20`
 - [ ] Submit application for XXX Program `10`
 
 ## Passive Quests (pinned)

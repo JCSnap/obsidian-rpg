@@ -36,8 +36,6 @@ tR += yamlContent;
 
 ## 📝 Note
 - 
-
-difficulty: easy
 ## Run this code after you have completed the leetcode
 ```run-python
 import subprocess

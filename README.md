@@ -1,21 +1,11 @@
 ## RPG in Obsidian
+Your notes are not just static text files.
+
 This is an example template to make your Obsidian workflow more dynamic. To demonstrate this, we will be "gamifying" our todo-list into an RPG.
 
-The premise is simple - complete tasks to earn coins
+The premise is simple - complete tasks to earn coins!
 
-## How this works?
-1. File created in Obsidian are stored locally as `.md` files
-2. There is an Obsidian [plugin](https://github.com/twibiral/obsidian-execute-code) that can allow you to execute code blocks written in Obsidian (basically turning your `.md` files into jupyter notebooks)
-
-This means that we can create python code blocks that acts like "buttons" to do things like this!
-```
-// open up `Main.md`
-// check if tasks are completed
-// if completed, open up inventory file and add coins
-```
-
-Except you do not have to manually create the scripts since it will be provided by this template
-
+# Main features
 ## Todo-list
 In Your `RLRPG Main`, there are 3 main sections:
 1. Your gold count
@@ -27,6 +17,32 @@ Active tasks are one-time off tasks meant to be completed. Passive tasks are rec
 At the end of the day, run the code at the end of the `RLRPG Main` file. It will go through all your tasks.
 1. Add gold for completed tasks, log the transactions in `RLRPG Transactions`
 2. Delete completed active tasks, reset completed passive tasks
+
+<div style="text-align: center;">
+    <video src="./assets/RLRPG-tasks.mp4" width="640" height="480" controls></video>
+</div>
+
+## Leetcode
+This gamification is very extensible. Other than your normal tasks, you can incorporate it into your templates. For instance, I have included a `Leetcode Template`, which you can use to track your Leetcode progress. Every time you are done with a Leetcode problem, run the code block at the bottom and your account will be updated with gold!
+
+<div style="text-align: center;">
+    <video src="./assets/RLRPG-leetcode.mp4" width="640" height="480" controls></video>
+</div>
+
+# Additional Info
+## How does this work?
+1. File created in Obsidian are stored locally as `.md` files
+2. There is an Obsidian [plugin](https://github.com/twibiral/obsidian-execute-code) that can allow you to execute code blocks written in Obsidian (basically turning your `.md` files into jupyter notebooks)
+3. I have pre-built some python scripts which will be run under the hood to update your files
+
+For instance, here is a pseudo-code of what one of the function does:
+```
+// open up `Main.md`
+// check if tasks are completed
+// if completed, add coins and reset tasks
+```
+
+Except you do not have to manually create the scripts since it will be provided by this template
 
 ## Main File structure
 - `RLRPG Main`: The "home screen" for your game. For QOL improvement, you can download the [homepage plugin](https://github.com/mirnovov/obsidian-homepage) and set your home page to this file
