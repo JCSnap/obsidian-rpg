@@ -39,14 +39,12 @@
             "id": "08d5cb2a8e8ca5cf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/RLRPG-leetcode.gif"
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "lucide-image",
+              "title": "RLRPG-leetcode"
             }
           }
         ],
@@ -215,14 +213,16 @@
   },
   "active": "1ec3c80929d36909",
   "lastOpenFiles": [
-    "templates/Leetcode Template.md",
     "assets/RLRPG-leetcode.mp4",
+    "assets/RLRPG-leetcode.gif",
+    "README.md",
+    "assets/RLRPG-tasks.mp4",
+    "assets/RLRPG-tasks.gif",
+    "templates/Leetcode Template.md",
     "RLRPG/RLRPG Transactions.md",
     "Leetcode/001 Two Sum.md",
     "RLRPG/RLRPG Main.md",
     "00.md",
-    "README.md",
-    "assets/RLRPG-tasks.mp4",
     "assets",
     "RLRPG/RLRPG Skill Tree.md",
     "Skills/Computer Science.md",

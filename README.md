@@ -18,16 +18,12 @@ At the end of the day, run the code at the end of the `RLRPG Main` file. It will
 1. Add gold for completed tasks, log the transactions in `RLRPG Transactions`
 2. Delete completed active tasks, reset completed passive tasks
 
-<div style="text-align: center;">
-    <video src="./assets/RLRPG-tasks.mp4" width="640" height="480" controls></video>
-</div>
+![RLRPG tasks demo](RLRPG-tasks.gif)
 
 ## Leetcode
 This gamification is very extensible. Other than your normal tasks, you can incorporate it into your templates. For instance, I have included a `Leetcode Template`, which you can use to track your Leetcode progress. Every time you are done with a Leetcode problem, run the code block at the bottom and your account will be updated with gold!
 
-<div style="text-align: center;">
-    <video src="./assets/RLRPG-leetcode.mp4" width="640" height="480" controls></video>
-</div>
+![RLRPG leetcode demo](RLRPG-leetcode.gif)
 
 # Additional Info
 ## How does this work?
