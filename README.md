@@ -1,4 +1,4 @@
-## RPG in Obsidian
+# RPG in Obsidian
 Your notes are not just static text files.
 
 This is an example template to make your Obsidian workflow more dynamic. To demonstrate this, we will be "gamifying" our todo-list into an RPG.
