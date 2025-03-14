@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "templates/Leetcode Template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Leetcode Template"
             }
           }
         ],
@@ -229,8 +229,8 @@
   },
   "active": "5f4839bef99de605",
   "lastOpenFiles": [
-    "RLRPG/RLRPG Setup.md",
     "README.md",
+    "RLRPG/RLRPG Setup.md",
     "assets/RLRPG-tasks.mp4",
     "assets/RLRPG-leetcode.mp4",
     "assets/RLRPG-leetcode.gif",

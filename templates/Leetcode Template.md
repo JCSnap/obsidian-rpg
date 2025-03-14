@@ -3,12 +3,9 @@ const id = tp.file.title.split(" ")[0];
 const createdDate = tp.file.creation_date('YYYY-MM-DD');
 const updatedDate = tp.file.last_modified_date('YYYY-MM-DD');
 
-// Define difficulty options
 const difficultyOptions = ["easy", "medium", "hard"];
-// Prompt user to select difficulty
 const difficulty = await tp.system.suggester(difficultyOptions, difficultyOptions, false, "Select difficulty level");
 
-// Construct YAML frontmatter
 const yamlContent = `---
 id: ${id}
 created_date: ${createdDate}
@@ -18,11 +15,11 @@ difficulty: ${difficulty}
 ---
 `;
 
-// Output YAML frontmatter
 tR += yamlContent;
 %>
 # 📚 <% tp.file.title %>
 - **🏷️Tags** :   #<% tp.file.creation_date('MM-YYYY') %> #leetcode
+
 ## 💭 Approach
 - 
 
@@ -34,8 +31,9 @@ tR += yamlContent;
 ```python
 ```
 
-## 📝 Note
+## 📝 Notes
 - 
+
 ## Run this code after you have completed the leetcode
 ```run-python
 import subprocess
