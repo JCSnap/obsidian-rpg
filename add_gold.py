@@ -3,7 +3,7 @@ import re
 from datetime import datetime
 
 if len(sys.argv) != 4:
-    print("Usage: add_coins.py <gold_count> <description> <vault_path>")
+    print("Usage: add_gold.py <gold_count> <description> <vault_path>")
     sys.exit(1)
 
 gold_count = int(sys.argv[1])
@@ -22,10 +22,7 @@ def get_gold():
     """Extracts the current gold count from the main file."""
     with open(main_file, "r") as f:
         content = f.read()
-    print("prefix", gold_prefix)
     match = re.search(rf"{re.escape(gold_prefix)}\s*`(-?\d+)`", content)
-    if match:
-        print(f"Gold Found: {match.group(1)}")
     return int(match.group(1)) if match else 0
 
 def update_gold():
@@ -46,7 +43,7 @@ def update_gold():
         f.write(updated_content)
 
     date_today = datetime.today().strftime('%Y-%m-%d')
-    transaction_entry = f"{date_today}: {'+' if gold_count > 0 else ''}{gold_count} ({description})\n"
+    transaction_entry = f"{date_today}: `{'+' if gold_count >= 0 else '-'}{gold_count}` ({description})\n"
     with open(transaction_file, "a") as f:
         f.write(transaction_entry)
 

@@ -1,5 +1,5 @@
 ## Items
-Gold: `10`
+Gold: `15`
 
 ## Active Quests
 - [x] Finish assignment 2 for CS0000 `20`
