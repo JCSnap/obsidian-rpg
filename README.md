@@ -3,7 +3,7 @@ Your notes are not just static text files.
 
 This is an example template to make your Obsidian workflow more dynamic. To demonstrate this, we will be "gamifying" our todo-list into an RPG.
 
-The premise is simple - complete tasks to earn coins!
+The premise is simple - complete tasks to earn coins! Learn how to setup [here](https://github.com/JCSnap/obsidian-rpg/blob/main/RLRPG/RLRPG%20Setup.md)
 
 # Main features
 ## Todo-list
