@@ -39,12 +39,14 @@
             "id": "08d5cb2a8e8ca5cf",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/RLRPG-leetcode.gif"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "RLRPG-leetcode"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
@@ -211,12 +213,12 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "1ec3c80929d36909",
+  "active": "08d5cb2a8e8ca5cf",
   "lastOpenFiles": [
+    "assets/RLRPG-tasks.mp4",
     "assets/RLRPG-leetcode.mp4",
     "assets/RLRPG-leetcode.gif",
     "README.md",
-    "assets/RLRPG-tasks.mp4",
     "assets/RLRPG-tasks.gif",
     "templates/Leetcode Template.md",
     "RLRPG/RLRPG Transactions.md",
