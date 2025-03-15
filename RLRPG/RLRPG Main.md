@@ -1,5 +1,5 @@
 ## Items
-Gold: `37`
+Gold: `67`
 
 ## Active Quests
 - [ ] Submit application for XXX Program `10`

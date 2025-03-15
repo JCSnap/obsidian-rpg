@@ -12,10 +12,10 @@ In Your `RLRPG Main`, there are 3 main sections:
 2. Your active tasks
 3. Your passive tasks
 
-Active tasks are one-time off tasks meant to be completed. Passive tasks are recurring tasks that once completed, will be reset the next day. You can add your own tasks and the gold count associated with each task in an inline code block `like this`
+Active tasks are one-time off tasks meant to be completed. Passive tasks are recurring tasks that once completed, will be reset the next day. You can add your own tasks and the gold count associated with each task in an inline code block `like this`. You can also link to your other [[notes]] using Obsidian syntax
 
 At the end of the day, run the code at the end of the `RLRPG Main` file. It will go through all your tasks.
-1. Add gold for completed tasks, log the transactions in `RLRPG Transactions`
+1. Add gold for completed tasks, log the transactions in `RLRPG Transactions`. Your link to other [[notes]] will be preserved
 2. Delete completed active tasks, reset completed passive tasks
 
 ![RLRPG tasks demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-tasks.gif)
