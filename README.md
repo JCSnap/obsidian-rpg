@@ -25,6 +25,16 @@ This gamification is very extensible. Other than your normal tasks, you can inco
 
 ![RLRPG leetcode demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-leetcode.gif)
 
+## Generate analytics
+After completing tasks for a while, your `RLRPG Transactions` file should be populated with many entries.
+
+Under `RLRPG Analytics`, you can run a script to view analytics on your coins in ASCII charts!
+
+![RLRPG leetcode demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-analytics.gif)
+
+Current supported analytics:
+- Cumulative gold over time
+
 # Additional Info
 ## How does this work?
 1. File created in Obsidian are stored locally as `.md` files
@@ -44,6 +54,7 @@ Except you do not have to manually create the scripts since it will be provided 
 - `RLRPG Main`: The "home screen" for your game. For QOL improvement, you can download the [homepage plugin](https://github.com/mirnovov/obsidian-homepage) and set your home page to this file
 - `RLRPG Transactions` This will serve as a book-keeping for all your coins inflow and outflow (think a Bitcoin ledger)
 - `RLRPG Database`: The source of truth for all variables (actually more like pointers to source of truth)?
+- `RLRPG Analytics`: See analytics about your account (your gold count over time etc.)
 - `RLRPG Skill Tree`: Contain links to resources for the important skills you want to develop. Contain quests for you to earn gold
 - The character files like `RLRPG Academics` and `RLRPG Health` etc. will contain important links, information and quests related to that aspect
 - `RLRPG Scripts`: Contains API documentation for some of the functions behind the hood. You only need to care about this if you are intending to extend this template and implement your own automation
