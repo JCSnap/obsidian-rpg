@@ -22,8 +22,9 @@ if not transaction_file:
     sys.exit(1)
 
 transaction_file_path = vault_path + folder + "/" + config.get("transaction_file_name")
+analytics_file_path = vault_path + folder + "/" + config.get("analytics_file_name")
 
-def plot_gold_ascii(date_to_gold):
+def plot_gold_ascii(date_to_gold, analytics_file_path):
     dates = sorted(date_to_gold.keys())
     gold_values = [date_to_gold[date] for date in dates]
 
@@ -36,8 +37,6 @@ def plot_gold_ascii(date_to_gold):
     terminal_width = shutil.get_terminal_size((80, 20)).columns
     graph_width = terminal_width - 20  # Padding for axis labels
 
-    # By default, each plot represents one day
-    # By if there eg. > 30 days worth of entry, we would group 3 days as 1 plot
     num_days = len(dates)
     if num_days > graph_width:
         step = num_days // graph_width
@@ -50,6 +49,7 @@ def plot_gold_ascii(date_to_gold):
     # Normalize Y-axis (gold values)
     max_gold = max(reduced_gold, default=1)
     min_gold = min(reduced_gold, default=0)
+    max_label_width = len(str(max_gold))
     y_step = max(1, (max_gold - min_gold) // 5) # scale
 
     y_labels = list(range(min_gold, max_gold + y_step, y_step))
@@ -61,27 +61,53 @@ def plot_gold_ascii(date_to_gold):
         for gold in reduced_gold
     ]
 
-    left_offset = len(str(max_gold)) + 1
-    print("\nGold Accumulation Over Time")
-    print("+" + "-" * (graph_width + left_offset) + "+")  # Top border
+    left_offset = max_label_width + 1
+    graph_output = []
+
+    graph_output.append("### Gold Accumulation Over Time\n")
+    graph_output.append("```\n")
+    graph_output.append("+" + "-" * (graph_width + left_offset) + "+\n")  # Top border
 
     # From bottom to top
     for y in reversed(y_labels):  # Reverse to make 0 at the bottom
-        row = [" "] * graph_width  # Empty row
+        row = [" "] * graph_width
         for i, gold in enumerate(scaled_gold):
             position = int(i * (graph_width - 1) / max(1, len(reduced_dates) - 1))
             if gold == y_labels.index(y):
-                row[position] = "*"  # Place data points
+                row[position] = "*"
 
-        print(f"{y:4} |" + "".join(row) + "|")  # Left Y-axis labels
+        graph_output.append(f"{y:>{max_label_width}} |" + "".join(row) + "|\n")  # Left Y-axis labels
 
-    print("+" + "-" * (graph_width + left_offset) + "+")  # Bottom border
+    graph_output.append("+" + "-" * (graph_width + left_offset) + "+")  # Bottom border
 
     start_date = dates[0] if dates else ""
     end_date = dates[-1] if len(dates) > 1 else start_date
     x_axis_label = f"{start_date}{' ' * (graph_width - len(start_date) - len(end_date))}{end_date}"
 
-    print(" " * 5 + x_axis_label)
+    graph_output.append(" " * 5 + x_axis_label + "\n")
+    graph_output.append("```\n")
+
+    with open(analytics_file_path, "r") as f:
+        lines = f.readlines()
+
+    # Find the line index for "## Analytics"
+    analytics_index = None
+    analytics_start = config.get("analytics_start")
+    for i, line in enumerate(lines):
+        if line.strip() == analytics_start:
+            analytics_index = i
+            break
+
+    # If "## Analytics" exists, overwrite content after it
+    if analytics_index is not None:
+        new_content = lines[:analytics_index + 1] + ["\n"] + graph_output + ["\n"]
+    else:
+        # If "## Analytics" is missing, add it at the top
+        new_content = ["## Analytics\n\n"] + graph_output + ["\n"]
+
+    # Write back to file
+    with open(analytics_file_path, "w") as f:
+        f.writelines(new_content)
 
 
 with open(transaction_file_path, "r") as f:
@@ -91,5 +117,5 @@ with open(transaction_file_path, "r") as f:
         date = line.split(": ")[0]
         gold_change = int(re.search(r'`(.*?)`', line).group(1))
         date_to_gold[date] += gold_change
-    plot_gold_ascii(date_to_gold)
+    plot_gold_ascii(date_to_gold, analytics_file_path)
 

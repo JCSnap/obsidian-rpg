@@ -1,5 +1,7 @@
 main_file_name| RLRPG Main.md
 transaction_file_name| RLRPG Transactions.md
+analytics_file_name| RLRPG Analytics.md
+analytics_start| ## Analytics
 folder| RLRPG
 gold_location| ## Items\nGold: 
 gold_prefix| Gold: 
