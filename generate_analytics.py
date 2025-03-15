@@ -90,7 +90,6 @@ def plot_gold_ascii(date_to_gold, analytics_file_path):
     with open(analytics_file_path, "r") as f:
         lines = f.readlines()
 
-    # Find the line index for "## Analytics"
     analytics_index = None
     analytics_start = config.get("analytics_start")
     for i, line in enumerate(lines):
@@ -98,15 +97,14 @@ def plot_gold_ascii(date_to_gold, analytics_file_path):
             analytics_index = i
             break
 
-    # If "## Analytics" exists, overwrite content after it
+    open_with = "w"
     if analytics_index is not None:
         new_content = lines[:analytics_index + 1] + ["\n"] + graph_output + ["\n"]
     else:
-        # If "## Analytics" is missing, add it at the top
-        new_content = ["## Analytics\n\n"] + graph_output + ["\n"]
+        open_with = "a"
+        new_content = [f"{analytics_start}\n"] + graph_output + ["\n"]
 
-    # Write back to file
-    with open(analytics_file_path, "w") as f:
+    with open(analytics_file_path, open_with) as f:
         f.writelines(new_content)
 
 
