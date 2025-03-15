@@ -10,3 +10,4 @@ passive_tasks_location| ## Passive Quests (pinned)
 leetcode_easy_gold| 2
 leetcode_medium_gold| 5
 leetcode_hard_gold| 10
+character_folder| Character
