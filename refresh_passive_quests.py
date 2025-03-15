@@ -51,7 +51,7 @@ def overwrite_passive_tasks_in_main_with(tasks: List[CheckedPassiveQuest]):
         sys.exit(1)
     with open(main_file_path, "r") as f:
         content = f.readlines()
-    new_task_lines = [f"- [ ] {task.name} `{task.gold}`\n" for task in tasks]
+    new_task_lines = [f"- [ ] {task.name} `{task.gold}` #{task.source.lower().replace(' ','-')}\n" for task in tasks]
 
     header_index = None
     for i, line in enumerate(content):

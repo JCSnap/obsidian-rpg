@@ -131,7 +131,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "0557255530efe0d2",
@@ -243,8 +244,9 @@
   },
   "active": "08d5cb2a8e8ca5cf",
   "lastOpenFiles": [
-    "refresh_passive_quests.py",
     "RLRPG/RLRPG Main.md",
+    "RLRPG/RLRPG Scripts.md",
+    "refresh_passive_quests.py",
     "RLRPG/Character/RLRPG Finance.md",
     "RLRPG/Character/RLRPG Health.md",
     "RLRPG/Character/RLRPG Life.md",
@@ -255,7 +257,6 @@
     "process_leetcode.py",
     "generate_analytics.py",
     "RLRPG/RLRPG Transactions.md",
-    "RLRPG/RLRPG Scripts.md",
     "RLRPG/RLRPG Setup.md",
     "README.md",
     "add_gold.py",
