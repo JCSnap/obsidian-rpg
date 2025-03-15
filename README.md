@@ -20,6 +20,13 @@ At the end of the day, run the code at the end of the `RLRPG Main` file. It will
 
 ![RLRPG tasks demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-tasks.gif)
 
+## Rotate passive tasks
+You can set relevant tasks within the character pages. Eg. health related passive tasks can be set in `RLRPG Health`. You can go into these pages and toggle the ones that you want to focus on. Then run the code below in `RLRPG Main` to refresh the passive task.
+
+Your new toggled tasks will be reflected, along with their reward amount and their sources.
+
+![RLRPG passive tasks demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-passive.gif)
+
 ## Leetcode
 This gamification is very extensible. Other than your normal tasks, you can incorporate it into your templates. For instance, I have included a `Leetcode Template`, which you can use to track your Leetcode progress. Every time you are done with a Leetcode problem, run the code block at the bottom and your account will be updated with gold!
 
@@ -30,7 +37,7 @@ After completing tasks for a while, your `RLRPG Transactions` file should be pop
 
 Under `RLRPG Analytics`, you can run a script to view analytics on your coins in ASCII charts!
 
-![RLRPG leetcode demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-analytics.gif)
+![RLRPG analytics demo](https://github.com/JCSnap/obsidian-rpg/blob/main/assets/RLRPG-analytics.gif)
 
 Current supported analytics:
 - Cumulative gold over time

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/RLRPG Main.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Main"
+              "title": "README"
             }
           },
           {
@@ -130,8 +130,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "0557255530efe0d2",
@@ -243,12 +242,14 @@
   },
   "active": "3d4d361de7d8fad0",
   "lastOpenFiles": [
-    "RLRPG/Character/RLRPG Life.md",
+    "assets/RLRPG-passive.gif",
+    "assets/RLRPG-passive.mp4",
     "RLRPG/RLRPG Main.md",
+    "RLRPG/Character/RLRPG Health.md",
     "RLRPG/Character/RLRPG Finance.md",
+    "RLRPG/Character/RLRPG Life.md",
     "RLRPG/Character/RLRPG Career.md",
     "RLRPG/Character/RLRPG Academics.md",
-    "RLRPG/Character/RLRPG Health.md",
     "RLRPG/RLRPG Scripts.md",
     "refresh_passive_quests.py",
     "RLRPG/RLRPG Database.md",
@@ -275,7 +276,6 @@
     "assets",
     "Skills/Computer Science.md",
     "Skills/Software Engineering.md",
-    "Leetcode",
     "Leetcode/001 invert binary.md",
     "templates/run-script-when-load-page.md",
     "Skills/Current Affairs.md",

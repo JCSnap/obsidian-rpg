@@ -8,6 +8,9 @@ Gold: `67`
 - [ ] Spend < $10 for the day `5` #rlrpg-finance
 - [ ] Consume < 1.6k calories for the day `10` #rlrpg-health
 - [ ] Go to the gym `10` #rlrpg-health
+- [ ] Play one session of football/ultimate frisbee `10` #rlrpg-health
+- [ ] Walk > 5k steps `5` #rlrpg-health
+- [ ] Drink 3 bottles of water `5` #rlrpg-health
 
 ## Character Pages
 [[RLRPG Academics]]
