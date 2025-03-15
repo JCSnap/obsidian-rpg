@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/RLRPG Analytics.md",
+                "file": "RLRPG/RLRPG Setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Analytics"
+              "title": "RLRPG Setup"
             }
           },
           {
@@ -241,17 +241,17 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "08d5cb2a8e8ca5cf",
+  "active": "1ec3c80929d36909",
   "lastOpenFiles": [
+    "RLRPG/RLRPG Main.md",
+    "RLRPG/RLRPG Analytics.md",
     "assets/RLRPG-analytics.gif",
     "assets/RLRPG-leetcode.gif",
     "README.md",
     "assets/e.gif",
     "assets/RLRPG-analytics.mov",
-    "RLRPG/RLRPG Analytics.md",
     "RLRPG/RLRPG Transactions.md",
     "RLRPG/RLRPG Database.md",
-    "RLRPG/RLRPG Main.md",
     "RLRPG/RLRPG Skill Tree.md",
     "RLRPG/RLRPG Scripts.md",
     "generate_analytics.py",

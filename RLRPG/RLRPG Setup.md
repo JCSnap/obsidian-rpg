@@ -13,5 +13,8 @@ Note: Since this is a "proof of concept", there are many parts that are "hardcod
 ##### [VS Code](https://github.com/sunxvming/obsidian-vscode-editor): This is so that none `.md` files like the python scripts I created are visible and viewable
 
 ## Applying the template
-- copy the folder `RLRPG` into your vault, and the files at the root of this directory (except `README.md`) into the root of your directory. This should be sufficient for the RPG todo-list
-- if you want the leetcode template, copy the `templates` folder as well. If you already have a folder for your templates, you can copy the content of my `templates` folder into yours
+- Copy the folder `RLRPG` into your vault, and the files at the root of this directory (except `README.md`) into the root of your directory. This should be sufficient for the RPG todo-list
+- If you want the leetcode template, copy the `templates` folder as well. If you already have a folder for your templates, you can copy the content of my `templates` folder into yours
+
+## Optional setup
+- If you want to "reduce" the size of the code block, this template includes a `css` snippet that prevents long line of code from wrapping around. Go to `Settings` -> `Appearance` -> `CSS Snippets` and toggle on `no-wrap`

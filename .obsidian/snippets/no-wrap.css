@@ -1,0 +1,5 @@
+/* Don't wrap codeblocks */
+pre > code, code[class*="language-"] {
+  white-space: pre !important;
+}
+

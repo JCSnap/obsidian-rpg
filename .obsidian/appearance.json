@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Blue Topaz"
+  "cssTheme": "Blue Topaz",
+  "enabledCssSnippets": [
+    "no-wrap"
+  ]
 }
