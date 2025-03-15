@@ -76,3 +76,19 @@ subprocess.run(["python3", @vault_path + "/generate_analytics.py", @vault_path])
 ```
 
 ---
+### refresh_passive_quests.py
+#### Accepts
+- `vault_path`: The current vault path, which can be retrieved by running `@vault_path` within the code block.
+#### Behaviour
+- Reads checked passive quests from character pages.
+- Extracts task name, gold value, and source file for each checked passive quest.
+- Overwrites the passive quests section in `RLRPG Main.md` with the updated passive quests from character pages.
+- Ensures that only checked passive tasks are carried over, resetting them as unchecked `[ ]` in `RLRPG Main.md`.
+#### Returns
+`None`
+#### How to run
+```run-python
+import subprocess
+
+subprocess.run(["python3", @vault_path + "/refresh_passive_quests.py", @vault_path])
+```
