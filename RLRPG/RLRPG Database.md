@@ -1,5 +1,6 @@
 main_file_name| RLRPG Main.md
 transaction_file_name| RLRPG Transactions.md
+folder| RLRPG
 gold_location| ## Items\nGold: 
 gold_prefix| Gold: 
 active_tasks_location| ## Active Quests

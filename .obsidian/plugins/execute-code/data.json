@@ -1,5 +1,5 @@
 {
-  "lastOpenLanguageTab": "python",
+  "lastOpenLanguageTab": "shell",
   "releaseNote2_1_0wasShowed": true,
   "persistentOuput": false,
   "timeout": 10000,
@@ -63,7 +63,7 @@
   "pythonEmbedPlots": true,
   "pythonFileExtension": "py",
   "pythonInject": "",
-  "shellPath": "bash",
+  "shellPath": "/Users/jcjustin/.zshrc",
   "shellArgs": "",
   "shellFileExtension": "sh",
   "shellInject": "",
