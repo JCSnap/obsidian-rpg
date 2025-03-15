@@ -14,8 +14,9 @@ database_file = vault_path + "/RLRPG/RLRPG Database.md"
 with open(database_file, "r") as db:
     config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
 
-main_file = vault_path + "/RLRPG/" + config["main_file_name"]
-transaction_file = vault_path + "/RLRPG/" + config["transaction_file_name"]
+folder = "/" + config.get("folder", "RLRPG")
+main_file = vault_path + folder + "/" + config["main_file_name"]
+transaction_file = vault_path + folder + "/" + config["transaction_file_name"]
 gold_prefix = config["gold_prefix"]
 
 def get_gold():
@@ -43,7 +44,7 @@ def update_gold():
         f.write(updated_content)
 
     date_today = datetime.today().strftime('%Y-%m-%d')
-    transaction_entry = f"{date_today}: `{'+' if gold_count >= 0 else '-'}{gold_count}` ({description})\n"
+    transaction_entry = f"{date_today}: `{'+' if gold_count >= 0 else ''}{gold_count}` ({description})\n"
     with open(transaction_file, "a") as f:
         f.write(transaction_entry)
 
