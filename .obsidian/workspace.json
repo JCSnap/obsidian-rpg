@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/RLRPG Setup.md",
+                "file": "RLRPG/RLRPG Main.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Setup"
+              "title": "RLRPG Main"
             }
           },
           {
@@ -241,24 +241,25 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "1ec3c80929d36909",
+  "active": "08d5cb2a8e8ca5cf",
   "lastOpenFiles": [
+    "RLRPG/RLRPG Transactions.md",
+    "RLRPG/RLRPG Scripts.md",
     "RLRPG/RLRPG Main.md",
+    "RLRPG/RLRPG Setup.md",
+    "RLRPG/RLRPG Database.md",
+    "README.md",
+    "add_gold.py",
     "RLRPG/RLRPG Analytics.md",
     "assets/RLRPG-analytics.gif",
     "assets/RLRPG-leetcode.gif",
-    "README.md",
     "assets/e.gif",
     "assets/RLRPG-analytics.mov",
-    "RLRPG/RLRPG Transactions.md",
-    "RLRPG/RLRPG Database.md",
     "RLRPG/RLRPG Skill Tree.md",
-    "RLRPG/RLRPG Scripts.md",
     "generate_analytics.py",
     "process_leetcode.py",
     "Essays/Essay on utilitarianism.md",
     "templates/Leetcode Template.md",
-    "RLRPG/RLRPG Setup.md",
     "assets/RLRPG-tasks.mp4",
     "assets/RLRPG-leetcode.mp4",
     "assets/RLRPG-tasks.gif",
@@ -275,7 +276,6 @@
     "Leetcode",
     "Leetcode/001 invert binary.md",
     "add_coins.py",
-    "add_gold.py",
     "process_tasks.py",
     "templates/run-script-when-load-page.md",
     "Skills/Current Affairs.md",
