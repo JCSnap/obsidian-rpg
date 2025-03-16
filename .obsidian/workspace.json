@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RLRPG/RLRPG Main.md",
+                "file": "RLRPG/RLRPG Database.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RLRPG Main"
+              "title": "RLRPG Database"
             }
           },
           {
@@ -242,11 +242,11 @@
   },
   "active": "3d4d361de7d8fad0",
   "lastOpenFiles": [
+    "RLRPG/RLRPG Main.md",
     "utils.py",
     "README.md",
     "RLRPG/RLRPG Scripts.md",
     "prompt.txt",
-    "RLRPG/RLRPG Main.md",
     "RLRPG/Character/RLRPG Health.md",
     "RLRPG/RLRPG Transactions.md",
     "assets/RLRPG-passive.gif",

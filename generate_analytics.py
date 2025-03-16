@@ -34,7 +34,7 @@ def plot_gold_ascii(date_to_gold, analytics_file_path):
         total_gold += gold
         cumulative_gold.append(total_gold)
 
-    terminal_width = shutil.get_terminal_size((80, 20)).columns
+    terminal_width = int(config.get("terminal_width"))
     graph_width = terminal_width - 20  # Padding for axis labels
 
     num_days = len(dates)

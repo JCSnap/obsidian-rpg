@@ -11,3 +11,4 @@ leetcode_easy_gold| 2
 leetcode_medium_gold| 5
 leetcode_hard_gold| 10
 character_folder| Character
+terminal_width| 75
