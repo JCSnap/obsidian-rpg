@@ -1,6 +1,8 @@
 import re
 import subprocess
 import sys
+import os
+import utils
 
 if len(sys.argv) != 2:
     print("Usage: python process_tasks.py <vault_path>")
@@ -8,12 +10,9 @@ if len(sys.argv) != 2:
 
 vault_path = sys.argv[1]
 
-database_file = vault_path + "/RLRPG/RLRPG Database.md"
+config = utils.get_config_from_db(vault_path)
 
-with open(database_file, "r") as db:
-    config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
-
-main_file = vault_path + "/RLRPG/" + config["main_file_name"]
+main_file = os.path.join(vault_path, config.get("folder"), config.get("main_file_name"))
 
 active_tasks_marker = config["active_tasks_location"]
 passive_tasks_marker = config["passive_tasks_location"]
@@ -58,12 +57,8 @@ def process_tasks():
 
     for gold, description in transactions:
         cmd = ["python3", vault_path + "/add_gold.py", str(gold), description, vault_path]
-        print(f"Executing command: {' '.join(cmd)}")
 
         result = subprocess.run(cmd, capture_output=True, text=True)
-
-        print("STDOUT:", result.stdout)
-        print("STDERR:", result.stderr)
 
     with open(main_file, "r") as f:
         content = f.readlines()

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "RLRPG/RLRPG Transactions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "RLRPG Transactions"
             }
           },
           {
@@ -242,10 +242,13 @@
   },
   "active": "3d4d361de7d8fad0",
   "lastOpenFiles": [
+    "RLRPG/RLRPG Main.md",
+    "RLRPG/RLRPG Transactions.md",
+    "RLRPG/Character/RLRPG Health.md",
+    "README.md",
+    "utils.py",
     "assets/RLRPG-passive.gif",
     "assets/RLRPG-passive.mp4",
-    "RLRPG/RLRPG Main.md",
-    "RLRPG/Character/RLRPG Health.md",
     "RLRPG/Character/RLRPG Finance.md",
     "RLRPG/Character/RLRPG Life.md",
     "RLRPG/Character/RLRPG Career.md",
@@ -256,9 +259,7 @@
     "process_tasks.py",
     "process_leetcode.py",
     "generate_analytics.py",
-    "RLRPG/RLRPG Transactions.md",
     "RLRPG/RLRPG Setup.md",
-    "README.md",
     "add_gold.py",
     "RLRPG/RLRPG Analytics.md",
     "assets/RLRPG-analytics.gif",
@@ -273,7 +274,6 @@
     "assets/RLRPG-tasks.gif",
     "Leetcode/001 Two Sum.md",
     "00.md",
-    "assets",
     "Skills/Computer Science.md",
     "Skills/Software Engineering.md",
     "Leetcode/001 invert binary.md",

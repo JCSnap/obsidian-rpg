@@ -1,7 +1,9 @@
 import sys
 import re
+import os
 from collections import defaultdict
 import shutil
+import utils
 
 if len(sys.argv) != 2:
     print("Usage: generate_analytics.py <vault_path>")
@@ -9,9 +11,7 @@ if len(sys.argv) != 2:
 
 vault_path = sys.argv[1]
 
-database_file = vault_path + "/RLRPG/RLRPG Database.md"
-with open(database_file, "r") as db:
-    config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
+config = utils.get_config_from_db(vault_path)
 
 transaction_file = config.get("transaction_file_name")
 folder = config.get("folder", "")

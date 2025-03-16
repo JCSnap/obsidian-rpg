@@ -1,6 +1,8 @@
 import sys
 import re
 from datetime import datetime
+import os
+import utils
 
 if len(sys.argv) != 4:
     print("Usage: add_gold.py <gold_count> <description> <vault_path>")
@@ -10,14 +12,19 @@ gold_count = int(sys.argv[1])
 description = sys.argv[2]
 vault_path = sys.argv[3]
 
-database_file = vault_path + "/RLRPG/RLRPG Database.md"
-with open(database_file, "r") as db:
-    config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
+config = utils.get_config_from_db(vault_path)
 
-folder = "/" + config.get("folder", "RLRPG")
-main_file = vault_path + folder + "/" + config["main_file_name"]
-transaction_file = vault_path + folder + "/" + config["transaction_file_name"]
-gold_prefix = config["gold_prefix"]
+folder = config.get("folder", "RLRPG")
+gold_prefix = config.get("gold_prefix")
+main_file_name = config.get("main_file_name")
+transaction_file_name = config.get("transaction_file_name")
+
+if not (gold_prefix or main_file_name or transaction_file_name):
+    print("Make sure database has <gold_prefix>, <main_file_name>, <transaction_file_name>")
+    sys.exit(1)
+
+main_file = os.path.join(vault_path, folder, main_file_name)
+transaction_file = os.path.join(vault_path, folder, transaction_file_name)
 
 def get_gold():
     """Extracts the current gold count from the main file."""

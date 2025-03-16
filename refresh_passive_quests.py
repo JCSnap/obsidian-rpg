@@ -4,6 +4,7 @@ import os
 import re
 from dataclasses import dataclass
 from typing import List
+import utils
 
 if len(sys.argv) != 2:
     print("Usage: refresh_passive_quests.py <vault_path>")
@@ -17,9 +18,7 @@ class CheckedPassiveQuest:
     gold: str
     source: str
 
-database_file = os.path.join(vault_path, "RLRPG/RLRPG Database.md")
-with open(database_file, "r") as db:
-    config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
+config = utils.get_config_from_db(vault_path)
 
 character_full_folder = os.path.join(config.get("folder"), config.get("character_folder"))
 

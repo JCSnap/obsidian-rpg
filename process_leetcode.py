@@ -1,6 +1,7 @@
 import sys
 import re
 import subprocess
+import utils
 
 if len(sys.argv) != 3:
     print("Usage: process_leetcode.py <leetcode_file_path> <vault_path>")
@@ -10,9 +11,7 @@ leetcode_file_path = sys.argv[1]
 vault_path = sys.argv[2]
 leetcode_title = leetcode_file_path.split("/")[-1].replace(".md", "")
 
-database_file = vault_path + "/RLRPG/RLRPG Database.md"
-with open(database_file, "r") as db:
-    config = {line.split("| ")[0]: line.split("| ")[1].strip() for line in db}
+config = utils.get_config_from_db(vault_path)
 
 def get_difficulty(leetcode_file_path) -> str:
     with open(leetcode_file_path, "r", encoding="utf-8") as f:
