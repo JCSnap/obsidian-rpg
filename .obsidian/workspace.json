@@ -11,14 +11,12 @@
             "id": "3d4d361de7d8fad0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "vscode-editor",
               "state": {
-                "file": "RLRPG/RLRPG Main.md",
-                "mode": "source",
-                "source": false
+                "file": "utils.py"
               },
               "icon": "lucide-file",
-              "title": "RLRPG Main"
+              "title": "utils"
             }
           },
           {
@@ -242,18 +240,19 @@
   },
   "active": "3d4d361de7d8fad0",
   "lastOpenFiles": [
-    "RLRPG/Character/RLRPG Health.md",
-    "RLRPG/RLRPG Main.md",
-    "RLRPG/RLRPG Transactions.md",
     "README.md",
+    "RLRPG/RLRPG Scripts.md",
+    "prompt.txt",
     "utils.py",
+    "RLRPG/RLRPG Main.md",
+    "RLRPG/Character/RLRPG Health.md",
+    "RLRPG/RLRPG Transactions.md",
     "assets/RLRPG-passive.gif",
     "assets/RLRPG-passive.mp4",
     "RLRPG/Character/RLRPG Finance.md",
     "RLRPG/Character/RLRPG Life.md",
     "RLRPG/Character/RLRPG Career.md",
     "RLRPG/Character/RLRPG Academics.md",
-    "RLRPG/RLRPG Scripts.md",
     "refresh_passive_quests.py",
     "RLRPG/RLRPG Database.md",
     "process_tasks.py",
@@ -270,7 +269,6 @@
     "Essays/Essay on utilitarianism.md",
     "templates/Leetcode Template.md",
     "assets/RLRPG-tasks.mp4",
-    "assets/RLRPG-leetcode.mp4",
     "assets/RLRPG-tasks.gif",
     "Leetcode/001 Two Sum.md",
     "00.md",
