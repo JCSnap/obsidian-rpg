@@ -49,7 +49,7 @@ def plot_gold_ascii(date_to_gold, analytics_file_path):
     # Normalize Y-axis (gold values)
     max_gold = max(reduced_gold, default=1)
     min_gold = min(reduced_gold, default=0)
-    max_label_width = len(str(max_gold))
+    max_label_width = max(len(str(max_gold)), len(str(min_gold)))
     y_step = max(1, (max_gold - min_gold) // 5) # scale
 
     y_labels = list(range(min_gold, max_gold + y_step, y_step))
