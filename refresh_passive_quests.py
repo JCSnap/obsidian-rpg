@@ -28,7 +28,7 @@ if character_full_folder is None:
 
 main_file_path = os.path.join(vault_path, config.get("folder"), config.get("main_file_name"))
 character_folder_path = os.path.join(vault_path, character_full_folder)
-task_pattern = re.compile(r"- \[([ x])\] (.+?)\s+`(-?\d+)`")
+task_pattern = utils.get_task_pattern()
 
 def add_checked_passive_task(file_path, file_title, tasks: List[CheckedPassiveQuest]):
     with open(file_path, "r") as f:

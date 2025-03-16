@@ -16,7 +16,7 @@ main_file = os.path.join(vault_path, config.get("folder"), config.get("main_file
 
 active_tasks_marker = config["active_tasks_location"]
 passive_tasks_marker = config["passive_tasks_location"]
-task_pattern = re.compile(r"- \[([ x])\] (.+?)\s+`(-?\d+)`")
+task_pattern = utils.get_task_pattern()
 
 def process_tasks():
     """First, update gold for completed tasks. Then, reset tasks in the main file."""
